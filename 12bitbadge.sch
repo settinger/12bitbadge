@@ -765,62 +765,17 @@ Text GLabel 5875 1500 0    50   Input ~ 0
 PWR_OUT_1
 Text GLabel 5950 5650 0    50   Input ~ 0
 PWR_OUT_3
-$Comp
-L Power_Management:TPS2041B U4
-U 1 1 5E3447C3
-P 10025 1350
-F 0 "U4" H 10025 1817 50  0000 C CNN
-F 1 "TPS2041B" H 10025 1726 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 10025 1850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps2041.pdf" H 9975 1650 50  0001 C CNN
-	1    10025 1350
-	1    0    0    -1  
-$EndComp
-Text GLabel 10025 1950 3    50   Input ~ 0
-0V
-Text GLabel 10525 1150 2    50   Input ~ 0
-3.3V
-Text GLabel 10525 1350 2    50   Output ~ 0
+Text GLabel 10175 950  2    50   Output ~ 0
 PWR_OUT_1
-Text GLabel 9525 1550 0    50   Input ~ 0
+Text GLabel 9500 1300 0    50   Input ~ 0
 R_OUT
-$Comp
-L Power_Management:TPS2041B U5
-U 1 1 5E3D9D27
-P 10075 3325
-F 0 "U5" H 10075 3792 50  0000 C CNN
-F 1 "TPS2041B" H 10075 3701 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 10075 3825 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps2041.pdf" H 10025 3625 50  0001 C CNN
-	1    10075 3325
-	1    0    0    -1  
-$EndComp
-Text GLabel 10075 3925 3    50   Input ~ 0
-0V
-Text GLabel 10575 3125 2    50   Input ~ 0
-3.3V
-Text GLabel 10575 3325 2    50   Output ~ 0
+Text GLabel 10325 2875 2    50   Output ~ 0
 PWR_OUT_2
-Text GLabel 9575 3525 0    50   Input ~ 0
+Text GLabel 9650 3225 0    50   Input ~ 0
 G_OUT
-$Comp
-L Power_Management:TPS2041B U6
-U 1 1 5E3DDBE5
-P 10000 5525
-F 0 "U6" H 10000 5992 50  0000 C CNN
-F 1 "TPS2041B" H 10000 5901 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 10000 6025 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps2041.pdf" H 9950 5825 50  0001 C CNN
-	1    10000 5525
-	1    0    0    -1  
-$EndComp
-Text GLabel 10000 6125 3    50   Input ~ 0
-0V
-Text GLabel 10500 5325 2    50   Input ~ 0
-3.3V
-Text GLabel 10500 5525 2    50   Output ~ 0
+Text GLabel 10300 5050 2    50   Output ~ 0
 PWR_OUT_3
-Text GLabel 9500 5725 0    50   Input ~ 0
+Text GLabel 9625 5400 0    50   Input ~ 0
 B_OUT
 Text GLabel 3950 7525 2    50   Input ~ 0
 PWR_OUT_3
@@ -855,4 +810,88 @@ Text Label 1475 5250 0    50   ~ 0
 tpi_dat_3
 Text Label 1475 5150 0    50   ~ 0
 tpi_clk_3
+$Comp
+L Device:R R20
+U 1 1 5E2DF577
+P 9800 3225
+F 0 "R20" V 9725 3225 50  0000 C CNN
+F 1 "1k" V 9800 3225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9730 3225 50  0001 C CNN
+F 3 "~" H 9800 3225 50  0001 C CNN
+	1    9800 3225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q2
+U 1 1 5E2E141C
+P 10150 3225
+F 0 "Q2" H 10375 3300 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 10375 3200 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10350 3325 50  0001 C CNN
+F 3 "~" H 10150 3225 50  0001 C CNN
+	1    10150 3225
+	1    0    0    -1  
+$EndComp
+Text GLabel 10250 3425 3    50   Input ~ 0
+3.3V
+Wire Wire Line
+	10325 2875 10250 2875
+Wire Wire Line
+	10250 2875 10250 3025
+$Comp
+L Device:R R19
+U 1 1 5E2F1A21
+P 9650 1300
+F 0 "R19" V 9575 1300 50  0000 C CNN
+F 1 "1k" V 9650 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9580 1300 50  0001 C CNN
+F 3 "~" H 9650 1300 50  0001 C CNN
+	1    9650 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5E2F1A27
+P 10000 1300
+F 0 "Q1" H 10225 1375 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 10225 1275 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10200 1400 50  0001 C CNN
+F 3 "~" H 10000 1300 50  0001 C CNN
+	1    10000 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 10100 1500 3    50   Input ~ 0
+3.3V
+Wire Wire Line
+	10175 950  10100 950 
+Wire Wire Line
+	10100 950  10100 1100
+$Comp
+L Device:R R21
+U 1 1 5E2F82CB
+P 9775 5400
+F 0 "R21" V 9700 5400 50  0000 C CNN
+F 1 "1k" V 9775 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9705 5400 50  0001 C CNN
+F 3 "~" H 9775 5400 50  0001 C CNN
+	1    9775 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q3
+U 1 1 5E2F82D1
+P 10125 5400
+F 0 "Q3" H 10350 5475 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 10350 5375 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10325 5500 50  0001 C CNN
+F 3 "~" H 10125 5400 50  0001 C CNN
+	1    10125 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 10225 5600 3    50   Input ~ 0
+3.3V
+Wire Wire Line
+	10300 5050 10225 5050
+Wire Wire Line
+	10225 5050 10225 5200
 $EndSCHEMATC
