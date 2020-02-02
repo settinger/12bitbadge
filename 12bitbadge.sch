@@ -31,7 +31,7 @@ Text GLabel 1725 7275 2    50   Input ~ 0
 Wire Wire Line
 	1075 7275 1150 7275
 Text GLabel 1075 7275 0    50   Input ~ 0
-3.3V
+PWR_IN
 Wire Wire Line
 	1725 7275 1650 7275
 Text GLabel 1725 7375 2    50   Input ~ 0
@@ -56,7 +56,7 @@ U 1 1 5E2BCE69
 P 6150 950
 F 0 "R2" V 5975 950 50  0000 C CNN
 F 1 "50k" V 6050 950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6080 950 50  0001 C CNN
 F 3 "~" H 6150 950 50  0001 C CNN
 	1    6150 950 
 	0    1    1    0   
@@ -71,7 +71,7 @@ U 1 1 5E2BE8CF
 P 6975 950
 F 0 "R3" V 6768 950 50  0000 C CNN
 F 1 "100k" V 6859 950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6905 950 50  0001 C CNN
 F 3 "~" H 6975 950 50  0001 C CNN
 	1    6975 950 
 	0    1    1    0   
@@ -86,7 +86,7 @@ U 1 1 5E2C191B
 P 7800 950
 F 0 "R4" V 7593 950 50  0000 C CNN
 F 1 "200k" V 7684 950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7730 950 50  0001 C CNN
 F 3 "~" H 7800 950 50  0001 C CNN
 	1    7800 950 
 	0    1    1    0   
@@ -101,7 +101,7 @@ U 1 1 5E2CD070
 P 5325 950
 F 0 "R1" V 5150 950 50  0000 C CNN
 F 1 "25k" V 5225 950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5255 950 50  0001 C CNN
 F 3 "~" H 5325 950 50  0001 C CNN
 	1    5325 950 
 	0    1    1    0   
@@ -175,7 +175,7 @@ U 1 1 5E3080D1
 P 3625 7125
 F 0 "R28" V 3550 7125 50  0000 C CNN
 F 1 "1k" V 3625 7125 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3555 7125 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3555 7125 50  0001 C CNN
 F 3 "~" H 3625 7125 50  0001 C CNN
 	1    3625 7125
 	0    1    1    0   
@@ -186,7 +186,7 @@ U 1 1 5E308B87
 P 3625 7325
 F 0 "R29" V 3550 7325 50  0000 C CNN
 F 1 "1k" V 3625 7325 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3555 7325 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3555 7325 50  0001 C CNN
 F 3 "~" H 3625 7325 50  0001 C CNN
 	1    3625 7325
 	0    1    1    0   
@@ -197,7 +197,7 @@ U 1 1 5E308EFB
 P 3625 7525
 F 0 "R30" V 3550 7525 50  0000 C CNN
 F 1 "1k" V 3625 7525 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3555 7525 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3555 7525 50  0001 C CNN
 F 3 "~" H 3625 7525 50  0001 C CNN
 	1    3625 7525
 	0    1    1    0   
@@ -236,21 +236,10 @@ U 1 1 5E2F1A21
 P 9700 1050
 F 0 "R9" V 9625 1050 50  0000 C CNN
 F 1 "1k" V 9700 1050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9630 1050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9630 1050 50  0001 C CNN
 F 3 "~" H 9700 1050 50  0001 C CNN
 	1    9700 1050
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:Q_PMOS_GSD Q1
-U 1 1 5E2F1A27
-P 10050 1050
-F 0 "Q1" H 10275 1125 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 10275 1025 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10250 1150 50  0001 C CNN
-F 3 "~" H 10050 1050 50  0001 C CNN
-	1    10050 1050
-	1    0    0    -1  
 $EndComp
 Text GLabel 10150 1250 3    50   Input ~ 0
 3.3V
@@ -264,7 +253,7 @@ U 1 1 5E3A6E88
 P 5325 1550
 F 0 "R5" V 5150 1550 50  0000 C CNN
 F 1 "25k" V 5225 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 1550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5255 1550 50  0001 C CNN
 F 3 "~" H 5325 1550 50  0001 C CNN
 	1    5325 1550
 	0    1    1    0   
@@ -300,7 +289,7 @@ U 1 1 5E3B0EBA
 P 6150 1550
 F 0 "R6" V 5975 1550 50  0000 C CNN
 F 1 "50k" V 6050 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 1550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6080 1550 50  0001 C CNN
 F 3 "~" H 6150 1550 50  0001 C CNN
 	1    6150 1550
 	0    1    1    0   
@@ -336,7 +325,7 @@ U 1 1 5E3B882D
 P 6975 1550
 F 0 "R7" V 6768 1550 50  0000 C CNN
 F 1 "100k" V 6859 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 1550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6905 1550 50  0001 C CNN
 F 3 "~" H 6975 1550 50  0001 C CNN
 	1    6975 1550
 	0    1    1    0   
@@ -372,7 +361,7 @@ U 1 1 5E3BCE8B
 P 7800 1550
 F 0 "R8" V 7593 1550 50  0000 C CNN
 F 1 "200k" V 7684 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 1550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7730 1550 50  0001 C CNN
 F 3 "~" H 7800 1550 50  0001 C CNN
 	1    7800 1550
 	0    1    1    0   
@@ -400,7 +389,7 @@ U 1 1 5E4353AC
 P 6150 2850
 F 0 "R11" V 5975 2850 50  0000 C CNN
 F 1 "50k" V 6050 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 2850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6080 2850 50  0001 C CNN
 F 3 "~" H 6150 2850 50  0001 C CNN
 	1    6150 2850
 	0    1    1    0   
@@ -415,7 +404,7 @@ U 1 1 5E4353B4
 P 6975 2850
 F 0 "R12" V 6768 2850 50  0000 C CNN
 F 1 "100k" V 6859 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 2850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6905 2850 50  0001 C CNN
 F 3 "~" H 6975 2850 50  0001 C CNN
 	1    6975 2850
 	0    1    1    0   
@@ -430,7 +419,7 @@ U 1 1 5E4353BC
 P 7800 2850
 F 0 "R13" V 7593 2850 50  0000 C CNN
 F 1 "200k" V 7684 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 2850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7730 2850 50  0001 C CNN
 F 3 "~" H 7800 2850 50  0001 C CNN
 	1    7800 2850
 	0    1    1    0   
@@ -445,7 +434,7 @@ U 1 1 5E4353C4
 P 5325 2850
 F 0 "R10" V 5150 2850 50  0000 C CNN
 F 1 "25k" V 5225 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 2850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5255 2850 50  0001 C CNN
 F 3 "~" H 5325 2850 50  0001 C CNN
 	1    5325 2850
 	0    1    1    0   
@@ -480,7 +469,7 @@ Connection ~ 8500 2950
 Wire Wire Line
 	8500 2950 8800 2950
 Text GLabel 8800 2950 2    50   Input ~ 0
-ADC_1
+ADC_2
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J2
 U 1 1 5E4353DB
@@ -503,7 +492,7 @@ PWR_OUT_2
 Text GLabel 10225 2600 2    50   Output ~ 0
 PWR_OUT_2
 Text GLabel 9550 2950 0    50   Input ~ 0
-R_OUT
+G_OUT
 NoConn ~ 9900 3750
 NoConn ~ 9900 3850
 NoConn ~ 10400 3750
@@ -514,21 +503,10 @@ U 1 1 5E4353EB
 P 9700 2950
 F 0 "R18" V 9625 2950 50  0000 C CNN
 F 1 "1k" V 9700 2950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9630 2950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9630 2950 50  0001 C CNN
 F 3 "~" H 9700 2950 50  0001 C CNN
 	1    9700 2950
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:Q_PMOS_GSD Q2
-U 1 1 5E4353F1
-P 10050 2950
-F 0 "Q2" H 10275 3025 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 10275 2925 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10250 3050 50  0001 C CNN
-F 3 "~" H 10050 2950 50  0001 C CNN
-	1    10050 2950
-	1    0    0    -1  
 $EndComp
 Text GLabel 10150 3150 3    50   Input ~ 0
 3.3V
@@ -542,7 +520,7 @@ U 1 1 5E4353FA
 P 5325 3450
 F 0 "R14" V 5150 3450 50  0000 C CNN
 F 1 "25k" V 5225 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 3450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5255 3450 50  0001 C CNN
 F 3 "~" H 5325 3450 50  0001 C CNN
 	1    5325 3450
 	0    1    1    0   
@@ -578,7 +556,7 @@ U 1 1 5E43540E
 P 6150 3450
 F 0 "R15" V 5975 3450 50  0000 C CNN
 F 1 "50k" V 6050 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 3450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6080 3450 50  0001 C CNN
 F 3 "~" H 6150 3450 50  0001 C CNN
 	1    6150 3450
 	0    1    1    0   
@@ -614,7 +592,7 @@ U 1 1 5E435422
 P 6975 3450
 F 0 "R16" V 6768 3450 50  0000 C CNN
 F 1 "100k" V 6859 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 3450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6905 3450 50  0001 C CNN
 F 3 "~" H 6975 3450 50  0001 C CNN
 	1    6975 3450
 	0    1    1    0   
@@ -650,7 +628,7 @@ U 1 1 5E435436
 P 7800 3450
 F 0 "R17" V 7593 3450 50  0000 C CNN
 F 1 "200k" V 7684 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 3450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7730 3450 50  0001 C CNN
 F 3 "~" H 7800 3450 50  0001 C CNN
 	1    7800 3450
 	0    1    1    0   
@@ -678,7 +656,7 @@ U 1 1 5E452756
 P 6150 4725
 F 0 "R20" V 5975 4725 50  0000 C CNN
 F 1 "50k" V 6050 4725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 4725 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6080 4725 50  0001 C CNN
 F 3 "~" H 6150 4725 50  0001 C CNN
 	1    6150 4725
 	0    1    1    0   
@@ -693,7 +671,7 @@ U 1 1 5E45275E
 P 6975 4725
 F 0 "R21" V 6768 4725 50  0000 C CNN
 F 1 "100k" V 6859 4725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 4725 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6905 4725 50  0001 C CNN
 F 3 "~" H 6975 4725 50  0001 C CNN
 	1    6975 4725
 	0    1    1    0   
@@ -708,7 +686,7 @@ U 1 1 5E452766
 P 7800 4725
 F 0 "R22" V 7593 4725 50  0000 C CNN
 F 1 "200k" V 7684 4725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 4725 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7730 4725 50  0001 C CNN
 F 3 "~" H 7800 4725 50  0001 C CNN
 	1    7800 4725
 	0    1    1    0   
@@ -723,7 +701,7 @@ U 1 1 5E45276E
 P 5325 4725
 F 0 "R19" V 5150 4725 50  0000 C CNN
 F 1 "25k" V 5225 4725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 4725 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5255 4725 50  0001 C CNN
 F 3 "~" H 5325 4725 50  0001 C CNN
 	1    5325 4725
 	0    1    1    0   
@@ -758,7 +736,7 @@ Connection ~ 8500 4825
 Wire Wire Line
 	8500 4825 8800 4825
 Text GLabel 8800 4825 2    50   Input ~ 0
-ADC_1
+ADC_3
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J3
 U 1 1 5E452785
@@ -781,7 +759,7 @@ PWR_OUT_3
 Text GLabel 10225 4475 2    50   Output ~ 0
 PWR_OUT_3
 Text GLabel 9550 4825 0    50   Input ~ 0
-R_OUT
+B_OUT
 NoConn ~ 9900 5625
 NoConn ~ 9900 5725
 NoConn ~ 10400 5625
@@ -792,21 +770,10 @@ U 1 1 5E452795
 P 9700 4825
 F 0 "R27" V 9625 4825 50  0000 C CNN
 F 1 "1k" V 9700 4825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9630 4825 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 9630 4825 50  0001 C CNN
 F 3 "~" H 9700 4825 50  0001 C CNN
 	1    9700 4825
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:Q_PMOS_GSD Q3
-U 1 1 5E45279B
-P 10050 4825
-F 0 "Q3" H 10275 4900 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 10275 4800 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10250 4925 50  0001 C CNN
-F 3 "~" H 10050 4825 50  0001 C CNN
-	1    10050 4825
-	1    0    0    -1  
 $EndComp
 Text GLabel 10150 5025 3    50   Input ~ 0
 3.3V
@@ -820,7 +787,7 @@ U 1 1 5E4527A4
 P 5325 5325
 F 0 "R23" V 5150 5325 50  0000 C CNN
 F 1 "25k" V 5225 5325 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 5325 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5255 5325 50  0001 C CNN
 F 3 "~" H 5325 5325 50  0001 C CNN
 	1    5325 5325
 	0    1    1    0   
@@ -856,7 +823,7 @@ U 1 1 5E4527B8
 P 6150 5325
 F 0 "R24" V 5975 5325 50  0000 C CNN
 F 1 "50k" V 6050 5325 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 5325 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6080 5325 50  0001 C CNN
 F 3 "~" H 6150 5325 50  0001 C CNN
 	1    6150 5325
 	0    1    1    0   
@@ -892,7 +859,7 @@ U 1 1 5E4527CC
 P 6975 5325
 F 0 "R25" V 6768 5325 50  0000 C CNN
 F 1 "100k" V 6859 5325 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 5325 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6905 5325 50  0001 C CNN
 F 3 "~" H 6975 5325 50  0001 C CNN
 	1    6975 5325
 	0    1    1    0   
@@ -928,7 +895,7 @@ U 1 1 5E4527E0
 P 7800 5325
 F 0 "R26" V 7593 5325 50  0000 C CNN
 F 1 "200k" V 7684 5325 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 5325 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7730 5325 50  0001 C CNN
 F 3 "~" H 7800 5325 50  0001 C CNN
 	1    7800 5325
 	0    1    1    0   
@@ -951,23 +918,23 @@ Text GLabel 4575 5225 0    50   Input ~ 0
 Wire Wire Line
 	4575 5225 4775 5225
 $Comp
-L Timer:TLC555CP U?
+L Timer:TLC555CP U1
 U 1 1 5E466E7C
 P 2700 2300
-F 0 "U?" H 2975 2800 50  0000 C CNN
+F 0 "U1" H 2975 2800 50  0000 C CNN
 F 1 "TLC555CP" H 2975 2700 50  0000 C CNN
-F 2 "" H 2700 2300 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2700 2300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlc555.pdf" H 2700 2300 50  0001 C CNN
 	1    2700 2300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV1
 U 1 1 5E473EEB
 P 1025 2100
-F 0 "RV?" H 925 2175 50  0000 R CNN
+F 0 "RV1" H 925 2175 50  0000 R CNN
 F 1 "100kΩ" H 925 2075 50  0000 R CNN
-F 2 "" H 1025 2100 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles" H 1025 2100 50  0001 C CNN
 F 3 "~" H 1025 2100 50  0001 C CNN
 	1    1025 2100
 	1    0    0    -1  
@@ -981,12 +948,12 @@ Text GLabel 850  2750 0    50   Input ~ 0
 Wire Wire Line
 	1025 2750 850  2750
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 5E480CB9
 P 1375 2100
-F 0 "C?" V 1100 2125 50  0000 C CNN
-F 1 "C" V 1200 2125 50  0000 C CNN
-F 2 "" H 1413 1950 50  0001 C CNN
+F 0 "C1" V 1075 2125 50  0000 C CNN
+F 1 "10 nF" V 1175 2125 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1413 1950 50  0001 C CNN
 F 3 "~" H 1375 2100 50  0001 C CNN
 	1    1375 2100
 	0    1    1    0   
@@ -994,23 +961,23 @@ $EndComp
 Wire Wire Line
 	1225 2100 1175 2100
 $Comp
-L Device:R R?
+L Device:R R31
 U 1 1 5E488129
 P 1650 1825
-F 0 "R?" V 1443 1825 50  0000 C CNN
+F 0 "R31" V 1443 1825 50  0000 C CNN
 F 1 "100k" V 1534 1825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 1825 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1580 1825 50  0001 C CNN
 F 3 "~" H 1650 1825 50  0001 C CNN
 	1    1650 1825
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R33
 U 1 1 5E488F96
 P 1650 2375
-F 0 "R?" V 1443 2375 50  0000 C CNN
+F 0 "R33" V 1443 2375 50  0000 C CNN
 F 1 "100k" V 1534 2375 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 2375 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1580 2375 50  0001 C CNN
 F 3 "~" H 1650 2375 50  0001 C CNN
 	1    1650 2375
 	1    0    0    1   
@@ -1049,12 +1016,12 @@ Wire Wire Line
 Wire Wire Line
 	1650 1600 2100 1600
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 5E4EAFBA
 P 1900 2450
-F 0 "C?" H 1850 2375 50  0000 R CNN
+F 0 "C2" H 1850 2375 50  0000 R CNN
 F 1 "10nF" H 1850 2550 50  0000 R CNN
-F 2 "" H 1938 2300 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1938 2300 50  0001 C CNN
 F 3 "~" H 1900 2450 50  0001 C CNN
 	1    1900 2450
 	-1   0    0    1   
@@ -1084,23 +1051,23 @@ Wire Wire Line
 	1775 2100 2200 2100
 NoConn ~ 3200 2300
 $Comp
-L Device:R R?
+L Device:R R32
 U 1 1 5E52B19F
 P 3350 2100
-F 0 "R?" V 3275 2100 50  0000 C CNN
+F 0 "R32" V 3275 2100 50  0000 C CNN
 F 1 "1k" V 3350 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 2100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3280 2100 50  0001 C CNN
 F 3 "~" H 3350 2100 50  0001 C CNN
 	1    3350 2100
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_PMOS_GSD Q?
+L Device:Q_PMOS_GDS Q4
 U 1 1 5E52B1A5
 P 3700 2100
-F 0 "Q?" H 3925 2175 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 3925 2075 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3900 2200 50  0001 C CNN
+F 0 "Q4" H 3925 2175 50  0000 L CNN
+F 1 "Q_PMOS_GDS" H 3925 2075 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3900 2200 50  0001 C CNN
 F 3 "~" H 3700 2100 50  0001 C CNN
 	1    3700 2100
 	1    0    0    -1  
@@ -1114,10 +1081,10 @@ Wire Wire Line
 Text GLabel 3800 2300 3    50   Input ~ 0
 PWR_IN
 $Comp
-L MCU_Microchip_ATtiny:ATtiny85-20PU U?
+L MCU_Microchip_ATtiny:ATtiny85-20PU U2
 U 1 1 5E5724FD
 P 1750 4200
-F 0 "U?" H 1200 4250 50  0000 R CNN
+F 0 "U2" H 1200 4250 50  0000 R CNN
 F 1 "ATtiny85-20PU" H 1200 4200 50  0000 R CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 1750 4200 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 1750 4200 50  0001 C CNN
@@ -1137,14 +1104,91 @@ Wire Wire Line
 Wire Wire Line
 	1750 4950 1625 4950
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J?
+L Connector_Generic:Conn_02x03_Odd_Even J5
 U 1 1 5E588D4A
 P 1700 5600
-F 0 "J?" H 1750 5917 50  0000 C CNN
+F 0 "J5" H 1750 5917 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 1750 5826 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 1700 5600 50  0001 C CNN
 F 3 "~" H 1700 5600 50  0001 C CNN
 	1    1700 5600
+	1    0    0    -1  
+$EndComp
+Text Label 2450 4400 0    50   ~ 0
+isp_rst
+Text Label 2450 4100 0    50   ~ 0
+isp_sck
+Text Label 2450 4000 0    50   ~ 0
+isp_miso
+Text Label 2450 3900 0    50   ~ 0
+isp_mosi
+Text GLabel 2850 4100 2    50   Output ~ 0
+R_OUT
+Text GLabel 2850 4000 2    50   Output ~ 0
+G_OUT
+Text GLabel 2850 3900 2    50   Output ~ 0
+B_OUT
+Text GLabel 2850 4400 2    50   Input ~ 0
+ADC_1
+Wire Wire Line
+	2350 3900 2850 3900
+Wire Wire Line
+	2350 4000 2850 4000
+Wire Wire Line
+	2350 4100 2850 4100
+Wire Wire Line
+	2350 4400 2850 4400
+Text GLabel 2850 4200 2    50   Input ~ 0
+ADC_2
+Text GLabel 2850 4300 2    50   Input ~ 0
+ADC_3
+Wire Wire Line
+	2850 4300 2350 4300
+Wire Wire Line
+	2350 4200 2850 4200
+Text Label 1500 5500 2    50   ~ 0
+isp_miso
+Text GLabel 2000 5500 2    50   Input ~ 0
+3.3V
+Text Label 1500 5600 2    50   ~ 0
+isp_sck
+Text Label 1500 5700 2    50   ~ 0
+isp_rst
+Text GLabel 2000 5700 2    50   Input ~ 0
+0V
+Text Label 2000 5600 0    50   ~ 0
+isp_mosi
+$Comp
+L Device:Q_PMOS_GDS Q3
+U 1 1 5E627F72
+P 10050 4825
+F 0 "Q3" H 10275 4900 50  0000 L CNN
+F 1 "Q_PMOS_GDS" H 10275 4800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 10250 4925 50  0001 C CNN
+F 3 "~" H 10050 4825 50  0001 C CNN
+	1    10050 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q1
+U 1 1 5E62B30C
+P 10050 1050
+F 0 "Q1" H 10275 1125 50  0000 L CNN
+F 1 "Q_PMOS_GDS" H 10275 1025 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 10250 1150 50  0001 C CNN
+F 3 "~" H 10050 1050 50  0001 C CNN
+	1    10050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q2
+U 1 1 5E62BFDE
+P 10050 2950
+F 0 "Q2" H 10275 3025 50  0000 L CNN
+F 1 "Q_PMOS_GDS" H 10275 2925 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 10250 3050 50  0001 C CNN
+F 3 "~" H 10050 2950 50  0001 C CNN
+	1    10050 2950
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
