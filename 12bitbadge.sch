@@ -16,39 +16,6 @@ $EndDescr
 Text Notes 7825 7000 0    250  ~ 0
 RGB LED SAO
 $Comp
-L MCU_Microchip_ATtiny:ATtiny10-TS U1
-U 1 1 5E295D9B
-P 2725 1300
-F 0 "U1" H 2700 1325 50  0000 R CNN
-F 1 "ATtiny10-TS" H 2700 1250 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 2725 1300 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8127-AVR-8-bit-Microcontroller-ATtiny4-ATtiny5-ATtiny9-ATtiny10_Datasheet.pdf" H 2725 1300 50  0001 C CNN
-	1    2725 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Microchip_ATtiny:ATtiny10-TS U2
-U 1 1 5E2960EB
-P 2725 3050
-F 0 "U2" H 2400 3100 50  0000 R CNN
-F 1 "ATtiny10-TS" H 2700 3000 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 2725 3050 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8127-AVR-8-bit-Microcontroller-ATtiny4-ATtiny5-ATtiny9-ATtiny10_Datasheet.pdf" H 2725 3050 50  0001 C CNN
-	1    2725 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Microchip_ATtiny:ATtiny10-TS U3
-U 1 1 5E296CD2
-P 2575 5125
-F 0 "U3" H 2375 5175 50  0000 R CNN
-F 1 "ATtiny10-TS" H 2550 5075 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 2575 5125 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8127-AVR-8-bit-Microcontroller-ATtiny4-ATtiny5-ATtiny9-ATtiny10_Datasheet.pdf" H 2575 5125 50  0001 C CNN
-	1    2575 5125
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x03_Odd_Even J4
 U 1 1 5E2974C7
 P 1350 7375
@@ -83,140 +50,12 @@ Wire Wire Line
 	1075 7475 1150 7475
 Wire Wire Line
 	1650 7475 1725 7475
-Text GLabel 2725 700  2    50   Input ~ 0
-3.3V
-Text GLabel 2725 2450 2    50   Input ~ 0
-3.3V
-Text GLabel 2575 4525 2    50   Input ~ 0
-3.3V
-Text GLabel 2725 1900 2    50   Input ~ 0
-0V
-Text GLabel 2725 3650 2    50   Input ~ 0
-0V
-Text GLabel 2575 5725 2    50   Input ~ 0
-0V
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J1
-U 1 1 5E29B2FD
-P 1425 1400
-F 0 "J1" H 1475 975 50  0000 C CNN
-F 1 "Conn_02x04_Counter_Clockwise" H 1475 1066 50  0000 C CNN
-F 2 "12bitbadge:SOIC_clipProgSmall" H 1425 1400 50  0001 C CNN
-F 3 "~" H 1425 1400 50  0001 C CNN
-	1    1425 1400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J2
-U 1 1 5E29CB0A
-P 1550 3200
-F 0 "J2" H 1600 2775 50  0000 C CNN
-F 1 "Conn_02x04_Counter_Clockwise" H 1600 2866 50  0000 C CNN
-F 2 "12bitbadge:SOIC_clipProgSmall" H 1550 3200 50  0001 C CNN
-F 3 "~" H 1550 3200 50  0001 C CNN
-	1    1550 3200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J3
-U 1 1 5E29D44F
-P 1275 5350
-F 0 "J3" H 1325 4925 50  0000 C CNN
-F 1 "Conn_02x04_Counter_Clockwise" H 1325 5016 50  0000 C CNN
-F 2 "12bitbadge:SOIC_clipProgSmall" H 1275 5350 50  0001 C CNN
-F 3 "~" H 1275 5350 50  0001 C CNN
-	1    1275 5350
-	-1   0    0    1   
-$EndComp
-Text Label 3500 1000 0    50   ~ 0
-tpi_dat_1
-Text Label 3475 2750 0    50   ~ 0
-tpi_dat_2
-Text Label 3325 4825 0    50   ~ 0
-tpi_dat_3
-Text Label 3500 1100 0    50   ~ 0
-tpi_clk_1
-Text Label 3475 2850 0    50   ~ 0
-tpi_clk_2
-Text Label 3325 4925 0    50   ~ 0
-tpi_clk_3
-Text Label 3325 5125 0    50   ~ 0
-tpi_rst_3
-Text Label 3475 3050 0    50   ~ 0
-tpi_rst_2
-Text Label 3500 1300 0    50   ~ 0
-tpi_rst_1
-Wire Wire Line
-	3325 1100 3500 1100
-Wire Wire Line
-	3500 1300 3325 1300
-Wire Wire Line
-	3475 2850 3325 2850
-Wire Wire Line
-	3325 3050 3475 3050
-Wire Wire Line
-	3175 5125 3325 5125
-Wire Wire Line
-	3175 4925 3325 4925
-Text Label 1625 1300 0    50   ~ 0
-tpi_dat_1
-Text Label 1625 1200 0    50   ~ 0
-tpi_clk_1
-Text Label 1625 1500 0    50   ~ 0
-tpi_rst_1
-Text Label 1750 3100 0    50   ~ 0
-tpi_dat_2
-Text Label 1750 3000 0    50   ~ 0
-tpi_clk_2
-Text Label 1750 3300 0    50   ~ 0
-tpi_rst_2
-Text Label 1475 5450 0    50   ~ 0
-tpi_rst_3
-Text GLabel 975  5150 0    50   Input ~ 0
-3.3V
-Text GLabel 1250 3000 0    50   Input ~ 0
-3.3V
-Text GLabel 1125 1200 0    50   Input ~ 0
-3.3V
-Text GLabel 1125 1500 0    50   Input ~ 0
-0V
-Text GLabel 1250 3300 0    50   Input ~ 0
-0V
-Text GLabel 975  5450 0    50   Input ~ 0
-0V
-NoConn ~ 1125 1400
-NoConn ~ 1125 1300
-NoConn ~ 1625 1400
-NoConn ~ 1250 3100
-NoConn ~ 1250 3200
-NoConn ~ 1750 3200
-NoConn ~ 1475 5350
-NoConn ~ 975  5350
-NoConn ~ 975  5250
-Text GLabel 3325 1200 2    50   Input ~ 0
-ADC_1
-Text GLabel 3325 2950 2    50   Input ~ 0
-ADC_2
-Text GLabel 3175 5025 2    50   Input ~ 0
-ADC_3
-Text GLabel 3725 4825 2    50   Output ~ 0
-B_OUT
-Wire Wire Line
-	3175 4825 3725 4825
-Text GLabel 3875 2750 2    50   Output ~ 0
-G_OUT
-Wire Wire Line
-	3325 2750 3875 2750
-Text GLabel 3875 1000 2    50   Output ~ 0
-R_OUT
-Wire Wire Line
-	3325 1000 3875 1000
 $Comp
 L Device:R R2
 U 1 1 5E2BCE69
 P 6150 950
-F 0 "R2" V 5943 950 50  0000 C CNN
-F 1 "50k" V 6034 950 50  0000 C CNN
+F 0 "R2" V 5975 950 50  0000 C CNN
+F 1 "50k" V 6050 950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 950 50  0001 C CNN
 F 3 "~" H 6150 950 50  0001 C CNN
 	1    6150 950 
@@ -225,23 +64,7 @@ $EndComp
 Wire Wire Line
 	6000 1150 6425 1150
 Wire Wire Line
-	6425 1150 6425 1050
-Wire Wire Line
 	6425 950  6300 950 
-$Comp
-L Switch:SW_SPDT SW3
-U 1 1 5E2BE413
-P 6625 1050
-F 0 "SW3" H 6625 1335 50  0000 C CNN
-F 1 "SW_SPDT" H 6625 1244 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6625 1050 50  0001 C CNN
-F 3 "~" H 6625 1050 50  0001 C CNN
-	1    6625 1050
-	1    0    0    -1  
-$EndComp
-Connection ~ 6425 1050
-Wire Wire Line
-	6425 1050 6425 950 
 $Comp
 L Device:R R3
 U 1 1 5E2BE8CF
@@ -256,23 +79,7 @@ $EndComp
 Wire Wire Line
 	6825 1150 7250 1150
 Wire Wire Line
-	7250 1150 7250 1050
-$Comp
-L Switch:SW_SPDT SW4
-U 1 1 5E2BF5B8
-P 7450 1050
-F 0 "SW4" H 7450 1335 50  0000 C CNN
-F 1 "SW_SPDT" H 7450 1244 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 7450 1050 50  0001 C CNN
-F 3 "~" H 7450 1050 50  0001 C CNN
-	1    7450 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	7125 950  7250 950 
-Wire Wire Line
-	7250 950  7250 1050
-Connection ~ 7250 1050
 $Comp
 L Device:R R4
 U 1 1 5E2C191B
@@ -292,8 +99,8 @@ $Comp
 L Device:R R1
 U 1 1 5E2CD070
 P 5325 950
-F 0 "R1" V 5118 950 50  0000 C CNN
-F 1 "25k" V 5209 950 50  0000 C CNN
+F 0 "R1" V 5150 950 50  0000 C CNN
+F 1 "25k" V 5225 950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 950 50  0001 C CNN
 F 3 "~" H 5325 950 50  0001 C CNN
 	1    5325 950 
@@ -302,32 +109,16 @@ $EndComp
 Wire Wire Line
 	5175 1150 5600 1150
 Wire Wire Line
-	5600 1150 5600 1050
-$Comp
-L Switch:SW_SPDT SW2
-U 1 1 5E2CD07C
-P 5800 1050
-F 0 "SW2" H 5800 1335 50  0000 C CNN
-F 1 "SW_SPDT" H 5800 1244 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 5800 1050 50  0001 C CNN
-F 3 "~" H 5800 1050 50  0001 C CNN
-	1    5800 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	5475 950  5600 950 
-Wire Wire Line
-	5600 950  5600 1050
-Connection ~ 5600 1050
 $Comp
-L Switch:SW_SPDT SW1
+L Switch:SW_Push_DPDT SW1
 U 1 1 5E2CF1F4
-P 4975 1050
-F 0 "SW1" H 4975 1335 50  0000 C CNN
-F 1 "SW_SPDT" H 4975 1244 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 4975 1050 50  0001 C CNN
-F 3 "~" H 4975 1050 50  0001 C CNN
-	1    4975 1050
+P 4975 1250
+F 0 "SW1" H 4975 1725 50  0000 C CNN
+F 1 "SW_SPDT" H 4975 1650 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 4975 1250 50  0001 C CNN
+F 3 "~" H 4975 1250 50  0001 C CNN
+	1    4975 1250
 	1    0    0    -1  
 $EndComp
 Text GLabel 4575 1050 0    50   Input ~ 0
@@ -341,366 +132,28 @@ Wire Wire Line
 Connection ~ 8075 1050
 Wire Wire Line
 	8075 1050 8075 1150
-$Comp
-L Device:R R5
-U 1 1 5E2D10BE
-P 8500 1300
-F 0 "R5" H 8430 1254 50  0000 R CNN
-F 1 "25k" H 8430 1345 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8430 1300 50  0001 C CNN
-F 3 "~" H 8500 1300 50  0001 C CNN
-	1    8500 1300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8500 1150 8500 1050
 Connection ~ 8500 1050
 Wire Wire Line
 	8500 1050 8800 1050
-Text GLabel 8500 1650 3    50   Input ~ 0
-0V
-Wire Wire Line
-	8500 1450 8500 1650
 Text GLabel 8800 1050 2    50   Input ~ 0
 ADC_1
 $Comp
-L Device:R R7
-U 1 1 5E2D98E3
-P 6150 2850
-F 0 "R7" V 5943 2850 50  0000 C CNN
-F 1 "50k" V 6034 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 2850 50  0001 C CNN
-F 3 "~" H 6150 2850 50  0001 C CNN
-	1    6150 2850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6000 3050 6425 3050
-Wire Wire Line
-	6425 3050 6425 2950
-Wire Wire Line
-	6425 2850 6300 2850
-$Comp
-L Switch:SW_SPDT SW7
-U 1 1 5E2D98EC
-P 6625 2950
-F 0 "SW7" H 6625 3235 50  0000 C CNN
-F 1 "SW_SPDT" H 6625 3144 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6625 2950 50  0001 C CNN
-F 3 "~" H 6625 2950 50  0001 C CNN
-	1    6625 2950
-	1    0    0    -1  
-$EndComp
-Connection ~ 6425 2950
-Wire Wire Line
-	6425 2950 6425 2850
-$Comp
-L Device:R R8
-U 1 1 5E2D98F4
-P 6975 2850
-F 0 "R8" V 6768 2850 50  0000 C CNN
-F 1 "100k" V 6859 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 2850 50  0001 C CNN
-F 3 "~" H 6975 2850 50  0001 C CNN
-	1    6975 2850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6825 3050 7250 3050
-Wire Wire Line
-	7250 3050 7250 2950
-$Comp
-L Switch:SW_SPDT SW8
-U 1 1 5E2D98FC
-P 7450 2950
-F 0 "SW8" H 7450 3235 50  0000 C CNN
-F 1 "SW_SPDT" H 7450 3144 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 7450 2950 50  0001 C CNN
-F 3 "~" H 7450 2950 50  0001 C CNN
-	1    7450 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7125 2850 7250 2850
-Wire Wire Line
-	7250 2850 7250 2950
-Connection ~ 7250 2950
-$Comp
-L Device:R R9
-U 1 1 5E2D9905
-P 7800 2850
-F 0 "R9" V 7593 2850 50  0000 C CNN
-F 1 "200k" V 7684 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 2850 50  0001 C CNN
-F 3 "~" H 7800 2850 50  0001 C CNN
-	1    7800 2850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7650 3050 8075 3050
-Wire Wire Line
-	7950 2850 8075 2850
-$Comp
-L Device:R R6
-U 1 1 5E2D990D
-P 5325 2850
-F 0 "R6" V 5118 2850 50  0000 C CNN
-F 1 "25k" V 5209 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 2850 50  0001 C CNN
-F 3 "~" H 5325 2850 50  0001 C CNN
-	1    5325 2850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5175 3050 5600 3050
-Wire Wire Line
-	5600 3050 5600 2950
-$Comp
-L Switch:SW_SPDT SW6
-U 1 1 5E2D9915
-P 5800 2950
-F 0 "SW6" H 5800 3235 50  0000 C CNN
-F 1 "SW_SPDT" H 5800 3144 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 5800 2950 50  0001 C CNN
-F 3 "~" H 5800 2950 50  0001 C CNN
-	1    5800 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5475 2850 5600 2850
-Wire Wire Line
-	5600 2850 5600 2950
-Connection ~ 5600 2950
-$Comp
-L Switch:SW_SPDT SW5
-U 1 1 5E2D991E
-P 4975 2950
-F 0 "SW5" H 4975 3235 50  0000 C CNN
-F 1 "SW_SPDT" H 4975 3144 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 4975 2950 50  0001 C CNN
-F 3 "~" H 4975 2950 50  0001 C CNN
-	1    4975 2950
-	1    0    0    -1  
-$EndComp
-Text GLabel 4575 2950 0    50   Input ~ 0
-3.3V
-Wire Wire Line
-	4575 2950 4775 2950
-Wire Wire Line
-	8075 2850 8075 2950
-Wire Wire Line
-	8075 2950 8500 2950
-Connection ~ 8075 2950
-Wire Wire Line
-	8075 2950 8075 3050
-$Comp
-L Device:R R10
-U 1 1 5E2D992A
-P 8500 3200
-F 0 "R10" H 8430 3154 50  0000 R CNN
-F 1 "25k" H 8430 3245 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8430 3200 50  0001 C CNN
-F 3 "~" H 8500 3200 50  0001 C CNN
-	1    8500 3200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8500 3050 8500 2950
-Connection ~ 8500 2950
-Wire Wire Line
-	8500 2950 8800 2950
-Text GLabel 8500 3550 3    50   Input ~ 0
-0V
-Wire Wire Line
-	8500 3350 8500 3550
-Text GLabel 8800 2950 2    50   Input ~ 0
-ADC_2
-$Comp
-L Device:R R12
-U 1 1 5E2DD278
-P 5975 5025
-F 0 "R12" V 5768 5025 50  0000 C CNN
-F 1 "50k" V 5859 5025 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5905 5025 50  0001 C CNN
-F 3 "~" H 5975 5025 50  0001 C CNN
-	1    5975 5025
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5825 5225 6250 5225
-Wire Wire Line
-	6250 5225 6250 5125
-Wire Wire Line
-	6250 5025 6125 5025
-$Comp
-L Switch:SW_SPDT SW11
-U 1 1 5E2DD281
-P 6450 5125
-F 0 "SW11" H 6450 5410 50  0000 C CNN
-F 1 "SW_SPDT" H 6450 5319 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6450 5125 50  0001 C CNN
-F 3 "~" H 6450 5125 50  0001 C CNN
-	1    6450 5125
-	1    0    0    -1  
-$EndComp
-Connection ~ 6250 5125
-Wire Wire Line
-	6250 5125 6250 5025
-$Comp
-L Device:R R13
-U 1 1 5E2DD289
-P 6800 5025
-F 0 "R13" V 6593 5025 50  0000 C CNN
-F 1 "100k" V 6684 5025 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6730 5025 50  0001 C CNN
-F 3 "~" H 6800 5025 50  0001 C CNN
-	1    6800 5025
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6650 5225 7075 5225
-Wire Wire Line
-	7075 5225 7075 5125
-$Comp
-L Switch:SW_SPDT SW12
-U 1 1 5E2DD291
-P 7275 5125
-F 0 "SW12" H 7275 5410 50  0000 C CNN
-F 1 "SW_SPDT" H 7275 5319 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 7275 5125 50  0001 C CNN
-F 3 "~" H 7275 5125 50  0001 C CNN
-	1    7275 5125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 5025 7075 5025
-Wire Wire Line
-	7075 5025 7075 5125
-Connection ~ 7075 5125
-$Comp
-L Device:R R14
-U 1 1 5E2DD29A
-P 7625 5025
-F 0 "R14" V 7418 5025 50  0000 C CNN
-F 1 "200k" V 7509 5025 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7555 5025 50  0001 C CNN
-F 3 "~" H 7625 5025 50  0001 C CNN
-	1    7625 5025
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7475 5225 7900 5225
-Wire Wire Line
-	7775 5025 7900 5025
-$Comp
-L Device:R R11
-U 1 1 5E2DD2A2
-P 5150 5025
-F 0 "R11" V 4943 5025 50  0000 C CNN
-F 1 "25k" V 5034 5025 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5080 5025 50  0001 C CNN
-F 3 "~" H 5150 5025 50  0001 C CNN
-	1    5150 5025
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5000 5225 5425 5225
-Wire Wire Line
-	5425 5225 5425 5125
-$Comp
-L Switch:SW_SPDT SW10
-U 1 1 5E2DD2AA
-P 5625 5125
-F 0 "SW10" H 5625 5410 50  0000 C CNN
-F 1 "SW_SPDT" H 5625 5319 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 5625 5125 50  0001 C CNN
-F 3 "~" H 5625 5125 50  0001 C CNN
-	1    5625 5125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 5025 5425 5025
-Wire Wire Line
-	5425 5025 5425 5125
-Connection ~ 5425 5125
-$Comp
-L Switch:SW_SPDT SW9
-U 1 1 5E2DD2B3
-P 4800 5125
-F 0 "SW9" H 4800 5410 50  0000 C CNN
-F 1 "SW_SPDT" H 4800 5319 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 4800 5125 50  0001 C CNN
-F 3 "~" H 4800 5125 50  0001 C CNN
-	1    4800 5125
-	1    0    0    -1  
-$EndComp
-Text GLabel 4400 5125 0    50   Input ~ 0
-3.3V
-Wire Wire Line
-	4400 5125 4600 5125
-Wire Wire Line
-	7900 5025 7900 5125
-Wire Wire Line
-	7900 5125 8325 5125
-Connection ~ 7900 5125
-Wire Wire Line
-	7900 5125 7900 5225
-$Comp
-L Device:R R15
-U 1 1 5E2DD2BF
-P 8325 5375
-F 0 "R15" H 8255 5329 50  0000 R CNN
-F 1 "25k" H 8255 5420 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8255 5375 50  0001 C CNN
-F 3 "~" H 8325 5375 50  0001 C CNN
-	1    8325 5375
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8325 5225 8325 5125
-Connection ~ 8325 5125
-Wire Wire Line
-	8325 5125 8625 5125
-Text GLabel 8325 5725 3    50   Input ~ 0
-0V
-Wire Wire Line
-	8325 5525 8325 5725
-Text GLabel 8625 5125 2    50   Input ~ 0
-ADC_3
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J5
+L Connector_Generic:Conn_02x03_Odd_Even J1
 U 1 1 5E2EEEBC
-P 6150 1600
-F 0 "J5" H 6200 1917 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 6200 1826 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 6150 1600 50  0001 C CNN
-F 3 "~" H 6150 1600 50  0001 C CNN
-	1    6150 1600
+P 10100 1850
+F 0 "J1" H 10150 2167 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 10150 2076 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 10100 1850 50  0001 C CNN
+F 3 "~" H 10100 1850 50  0001 C CNN
+	1    10100 1850
 	1    0    0    -1  
 $EndComp
-Text GLabel 6525 1500 2    50   Input ~ 0
+Text GLabel 10475 1750 2    50   Input ~ 0
 0V
 Wire Wire Line
-	6525 1500 6450 1500
+	10475 1750 10400 1750
 Wire Wire Line
-	5875 1500 5950 1500
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J7
-U 1 1 5E2FDC75
-P 6225 5750
-F 0 "J7" H 6275 6067 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 6275 5976 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 6225 5750 50  0001 C CNN
-F 3 "~" H 6225 5750 50  0001 C CNN
-	1    6225 5750
-	1    0    0    -1  
-$EndComp
-Text GLabel 6600 5650 2    50   Input ~ 0
-0V
-Wire Wire Line
-	5950 5650 6025 5650
-Wire Wire Line
-	6600 5650 6525 5650
+	9825 1750 9900 1750
 $Comp
 L Device:LED_RAGB D1
 U 1 1 5E3022FD
@@ -717,10 +170,10 @@ Text GLabel 2775 7325 0    50   Input ~ 0
 Wire Wire Line
 	2775 7325 2900 7325
 $Comp
-L Device:R R16
+L Device:R R28
 U 1 1 5E3080D1
 P 3625 7125
-F 0 "R16" V 3550 7125 50  0000 C CNN
+F 0 "R28" V 3550 7125 50  0000 C CNN
 F 1 "1k" V 3625 7125 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3555 7125 50  0001 C CNN
 F 3 "~" H 3625 7125 50  0001 C CNN
@@ -728,10 +181,10 @@ F 3 "~" H 3625 7125 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R17
+L Device:R R29
 U 1 1 5E308B87
 P 3625 7325
-F 0 "R17" V 3550 7325 50  0000 C CNN
+F 0 "R29" V 3550 7325 50  0000 C CNN
 F 1 "1k" V 3625 7325 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3555 7325 50  0001 C CNN
 F 3 "~" H 3625 7325 50  0001 C CNN
@@ -739,10 +192,10 @@ F 3 "~" H 3625 7325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R18
+L Device:R R30
 U 1 1 5E308EFB
 P 3625 7525
-F 0 "R18" V 3550 7525 50  0000 C CNN
+F 0 "R30" V 3550 7525 50  0000 C CNN
 F 1 "1k" V 3625 7525 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3555 7525 50  0001 C CNN
 F 3 "~" H 3625 7525 50  0001 C CNN
@@ -761,137 +214,937 @@ Wire Wire Line
 	3775 7325 3950 7325
 Wire Wire Line
 	3950 7125 3775 7125
-Text GLabel 5875 1500 0    50   Input ~ 0
+Text GLabel 9825 1750 0    50   Input ~ 0
 PWR_OUT_1
-Text GLabel 5950 5650 0    50   Input ~ 0
-PWR_OUT_3
-Text GLabel 10175 950  2    50   Output ~ 0
+Text GLabel 10225 700  2    50   Output ~ 0
 PWR_OUT_1
-Text GLabel 9500 1300 0    50   Input ~ 0
+Text GLabel 9550 1050 0    50   Input ~ 0
 R_OUT
-Text GLabel 10325 2875 2    50   Output ~ 0
-PWR_OUT_2
-Text GLabel 9650 3225 0    50   Input ~ 0
-G_OUT
-Text GLabel 10300 5050 2    50   Output ~ 0
-PWR_OUT_3
-Text GLabel 9625 5400 0    50   Input ~ 0
-B_OUT
 Text GLabel 3950 7525 2    50   Input ~ 0
 PWR_OUT_3
 Text GLabel 3950 7325 2    50   Input ~ 0
 PWR_OUT_2
 Text GLabel 3950 7125 2    50   Input ~ 0
 PWR_OUT_1
-NoConn ~ 5950 1600
-NoConn ~ 5950 1700
-NoConn ~ 6450 1600
-NoConn ~ 6450 1700
-Text GLabel 5925 3375 0    50   Input ~ 0
-PWR_OUT_2
-Wire Wire Line
-	5925 3375 6000 3375
-Wire Wire Line
-	6575 3375 6500 3375
-Text GLabel 6575 3375 2    50   Input ~ 0
-0V
+NoConn ~ 9900 1850
+NoConn ~ 9900 1950
+NoConn ~ 10400 1850
+NoConn ~ 10400 1950
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J6
-U 1 1 5E2FB412
-P 6200 3475
-F 0 "J6" H 6250 3792 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 6250 3701 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 6200 3475 50  0001 C CNN
-F 3 "~" H 6200 3475 50  0001 C CNN
-	1    6200 3475
-	1    0    0    -1  
-$EndComp
-Text Label 1475 5250 0    50   ~ 0
-tpi_dat_3
-Text Label 1475 5150 0    50   ~ 0
-tpi_clk_3
-$Comp
-L Device:R R20
-U 1 1 5E2DF577
-P 9800 3225
-F 0 "R20" V 9725 3225 50  0000 C CNN
-F 1 "1k" V 9800 3225 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9730 3225 50  0001 C CNN
-F 3 "~" H 9800 3225 50  0001 C CNN
-	1    9800 3225
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Q_PMOS_GSD Q2
-U 1 1 5E2E141C
-P 10150 3225
-F 0 "Q2" H 10375 3300 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 10375 3200 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10350 3325 50  0001 C CNN
-F 3 "~" H 10150 3225 50  0001 C CNN
-	1    10150 3225
-	1    0    0    -1  
-$EndComp
-Text GLabel 10250 3425 3    50   Input ~ 0
-3.3V
-Wire Wire Line
-	10325 2875 10250 2875
-Wire Wire Line
-	10250 2875 10250 3025
-$Comp
-L Device:R R19
+L Device:R R9
 U 1 1 5E2F1A21
-P 9650 1300
-F 0 "R19" V 9575 1300 50  0000 C CNN
-F 1 "1k" V 9650 1300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9580 1300 50  0001 C CNN
-F 3 "~" H 9650 1300 50  0001 C CNN
-	1    9650 1300
+P 9700 1050
+F 0 "R9" V 9625 1050 50  0000 C CNN
+F 1 "1k" V 9700 1050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9630 1050 50  0001 C CNN
+F 3 "~" H 9700 1050 50  0001 C CNN
+	1    9700 1050
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 5E2F1A27
-P 10000 1300
-F 0 "Q1" H 10225 1375 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 10225 1275 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10200 1400 50  0001 C CNN
-F 3 "~" H 10000 1300 50  0001 C CNN
-	1    10000 1300
+P 10050 1050
+F 0 "Q1" H 10275 1125 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 10275 1025 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10250 1150 50  0001 C CNN
+F 3 "~" H 10050 1050 50  0001 C CNN
+	1    10050 1050
 	1    0    0    -1  
 $EndComp
-Text GLabel 10100 1500 3    50   Input ~ 0
+Text GLabel 10150 1250 3    50   Input ~ 0
 3.3V
 Wire Wire Line
-	10175 950  10100 950 
+	10225 700  10150 700 
 Wire Wire Line
-	10100 950  10100 1100
+	10150 700  10150 850 
+$Comp
+L Device:R R5
+U 1 1 5E3A6E88
+P 5325 1550
+F 0 "R5" V 5150 1550 50  0000 C CNN
+F 1 "25k" V 5225 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 1550 50  0001 C CNN
+F 3 "~" H 5325 1550 50  0001 C CNN
+	1    5325 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 950  5600 1050
+$Comp
+L Switch:SW_Push_DPDT SW2
+U 1 1 5E3A9FCD
+P 5800 1250
+F 0 "SW2" H 5800 1725 50  0000 C CNN
+F 1 "SW_SPDT" H 5800 1650 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 5800 1250 50  0001 C CNN
+F 3 "~" H 5800 1250 50  0001 C CNN
+	1    5800 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 1050
+Wire Wire Line
+	5600 1050 5600 1150
+Wire Wire Line
+	5475 1550 5600 1550
+Wire Wire Line
+	5600 1550 5600 1450
+Wire Wire Line
+	5600 1350 5600 1450
+Wire Wire Line
+	5175 1350 5600 1350
+Connection ~ 5600 1450
+$Comp
+L Device:R R6
+U 1 1 5E3B0EBA
+P 6150 1550
+F 0 "R6" V 5975 1550 50  0000 C CNN
+F 1 "50k" V 6050 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 1550 50  0001 C CNN
+F 3 "~" H 6150 1550 50  0001 C CNN
+	1    6150 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 1550 6425 1550
+Wire Wire Line
+	6425 1550 6425 1450
+Wire Wire Line
+	6425 1350 6000 1350
+Wire Wire Line
+	6425 950  6425 1050
+$Comp
+L Switch:SW_Push_DPDT SW3
+U 1 1 5E3B7C20
+P 6625 1250
+F 0 "SW3" H 6625 1725 50  0000 C CNN
+F 1 "SW_SPDT" H 6625 1650 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6625 1250 50  0001 C CNN
+F 3 "~" H 6625 1250 50  0001 C CNN
+	1    6625 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6425 1050
+Wire Wire Line
+	6425 1050 6425 1150
+Connection ~ 6425 1450
+Wire Wire Line
+	6425 1450 6425 1350
+$Comp
+L Device:R R7
+U 1 1 5E3B882D
+P 6975 1550
+F 0 "R7" V 6768 1550 50  0000 C CNN
+F 1 "100k" V 6859 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 1550 50  0001 C CNN
+F 3 "~" H 6975 1550 50  0001 C CNN
+	1    6975 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7125 1550 7250 1550
+Wire Wire Line
+	7250 1550 7250 1450
+Wire Wire Line
+	7250 1350 6825 1350
+Wire Wire Line
+	7250 950  7250 1050
+$Comp
+L Switch:SW_Push_DPDT SW4
+U 1 1 5E3BC631
+P 7450 1250
+F 0 "SW4" H 7450 1725 50  0000 C CNN
+F 1 "SW_SPDT" H 7450 1650 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 7450 1250 50  0001 C CNN
+F 3 "~" H 7450 1250 50  0001 C CNN
+	1    7450 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 1050
+Wire Wire Line
+	7250 1050 7250 1150
+Connection ~ 7250 1450
+Wire Wire Line
+	7250 1450 7250 1350
+$Comp
+L Device:R R8
+U 1 1 5E3BCE8B
+P 7800 1550
+F 0 "R8" V 7593 1550 50  0000 C CNN
+F 1 "200k" V 7684 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 1550 50  0001 C CNN
+F 3 "~" H 7800 1550 50  0001 C CNN
+	1    7800 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 1350 8075 1350
+Wire Wire Line
+	8075 1350 8075 1450
+Wire Wire Line
+	8075 1550 7950 1550
+Wire Wire Line
+	8075 1450 8500 1450
+Wire Wire Line
+	8500 1050 8500 1450
+Connection ~ 8075 1450
+Wire Wire Line
+	8075 1450 8075 1550
+Text GLabel 4575 1450 0    50   Input ~ 0
+0V
+Wire Wire Line
+	4575 1450 4775 1450
+$Comp
+L Device:R R11
+U 1 1 5E4353AC
+P 6150 2850
+F 0 "R11" V 5975 2850 50  0000 C CNN
+F 1 "50k" V 6050 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 2850 50  0001 C CNN
+F 3 "~" H 6150 2850 50  0001 C CNN
+	1    6150 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 3050 6425 3050
+Wire Wire Line
+	6425 2850 6300 2850
+$Comp
+L Device:R R12
+U 1 1 5E4353B4
+P 6975 2850
+F 0 "R12" V 6768 2850 50  0000 C CNN
+F 1 "100k" V 6859 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 2850 50  0001 C CNN
+F 3 "~" H 6975 2850 50  0001 C CNN
+	1    6975 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6825 3050 7250 3050
+Wire Wire Line
+	7125 2850 7250 2850
+$Comp
+L Device:R R13
+U 1 1 5E4353BC
+P 7800 2850
+F 0 "R13" V 7593 2850 50  0000 C CNN
+F 1 "200k" V 7684 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 2850 50  0001 C CNN
+F 3 "~" H 7800 2850 50  0001 C CNN
+	1    7800 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 3050 8075 3050
+Wire Wire Line
+	7950 2850 8075 2850
+$Comp
+L Device:R R10
+U 1 1 5E4353C4
+P 5325 2850
+F 0 "R10" V 5150 2850 50  0000 C CNN
+F 1 "25k" V 5225 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 2850 50  0001 C CNN
+F 3 "~" H 5325 2850 50  0001 C CNN
+	1    5325 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5175 3050 5600 3050
+Wire Wire Line
+	5475 2850 5600 2850
+$Comp
+L Switch:SW_Push_DPDT SW5
+U 1 1 5E4353CC
+P 4975 3150
+F 0 "SW5" H 4975 3625 50  0000 C CNN
+F 1 "SW_SPDT" H 4975 3550 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 4975 3150 50  0001 C CNN
+F 3 "~" H 4975 3150 50  0001 C CNN
+	1    4975 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4575 2950 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	4575 2950 4775 2950
+Wire Wire Line
+	8075 2850 8075 2950
+Wire Wire Line
+	8075 2950 8500 2950
+Connection ~ 8075 2950
+Wire Wire Line
+	8075 2950 8075 3050
+Connection ~ 8500 2950
+Wire Wire Line
+	8500 2950 8800 2950
+Text GLabel 8800 2950 2    50   Input ~ 0
+ADC_1
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J2
+U 1 1 5E4353DB
+P 10100 3750
+F 0 "J2" H 10150 4067 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 10150 3976 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 10100 3750 50  0001 C CNN
+F 3 "~" H 10100 3750 50  0001 C CNN
+	1    10100 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 10475 3650 2    50   Input ~ 0
+0V
+Wire Wire Line
+	10475 3650 10400 3650
+Wire Wire Line
+	9825 3650 9900 3650
+Text GLabel 9825 3650 0    50   Input ~ 0
+PWR_OUT_2
+Text GLabel 10225 2600 2    50   Output ~ 0
+PWR_OUT_2
+Text GLabel 9550 2950 0    50   Input ~ 0
+R_OUT
+NoConn ~ 9900 3750
+NoConn ~ 9900 3850
+NoConn ~ 10400 3750
+NoConn ~ 10400 3850
+$Comp
+L Device:R R18
+U 1 1 5E4353EB
+P 9700 2950
+F 0 "R18" V 9625 2950 50  0000 C CNN
+F 1 "1k" V 9700 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9630 2950 50  0001 C CNN
+F 3 "~" H 9700 2950 50  0001 C CNN
+	1    9700 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q2
+U 1 1 5E4353F1
+P 10050 2950
+F 0 "Q2" H 10275 3025 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 10275 2925 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10250 3050 50  0001 C CNN
+F 3 "~" H 10050 2950 50  0001 C CNN
+	1    10050 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 10150 3150 3    50   Input ~ 0
+3.3V
+Wire Wire Line
+	10225 2600 10150 2600
+Wire Wire Line
+	10150 2600 10150 2750
+$Comp
+L Device:R R14
+U 1 1 5E4353FA
+P 5325 3450
+F 0 "R14" V 5150 3450 50  0000 C CNN
+F 1 "25k" V 5225 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 3450 50  0001 C CNN
+F 3 "~" H 5325 3450 50  0001 C CNN
+	1    5325 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 2850 5600 2950
+$Comp
+L Switch:SW_Push_DPDT SW6
+U 1 1 5E435401
+P 5800 3150
+F 0 "SW6" H 5800 3625 50  0000 C CNN
+F 1 "SW_SPDT" H 5800 3550 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 5800 3150 50  0001 C CNN
+F 3 "~" H 5800 3150 50  0001 C CNN
+	1    5800 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 2950
+Wire Wire Line
+	5600 2950 5600 3050
+Wire Wire Line
+	5475 3450 5600 3450
+Wire Wire Line
+	5600 3450 5600 3350
+Wire Wire Line
+	5600 3250 5600 3350
+Wire Wire Line
+	5175 3250 5600 3250
+Connection ~ 5600 3350
+$Comp
+L Device:R R15
+U 1 1 5E43540E
+P 6150 3450
+F 0 "R15" V 5975 3450 50  0000 C CNN
+F 1 "50k" V 6050 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 3450 50  0001 C CNN
+F 3 "~" H 6150 3450 50  0001 C CNN
+	1    6150 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 3450 6425 3450
+Wire Wire Line
+	6425 3450 6425 3350
+Wire Wire Line
+	6425 3250 6000 3250
+Wire Wire Line
+	6425 2850 6425 2950
+$Comp
+L Switch:SW_Push_DPDT SW7
+U 1 1 5E435418
+P 6625 3150
+F 0 "SW7" H 6625 3625 50  0000 C CNN
+F 1 "SW_SPDT" H 6625 3550 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6625 3150 50  0001 C CNN
+F 3 "~" H 6625 3150 50  0001 C CNN
+	1    6625 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6425 2950
+Wire Wire Line
+	6425 2950 6425 3050
+Connection ~ 6425 3350
+Wire Wire Line
+	6425 3350 6425 3250
+$Comp
+L Device:R R16
+U 1 1 5E435422
+P 6975 3450
+F 0 "R16" V 6768 3450 50  0000 C CNN
+F 1 "100k" V 6859 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 3450 50  0001 C CNN
+F 3 "~" H 6975 3450 50  0001 C CNN
+	1    6975 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7125 3450 7250 3450
+Wire Wire Line
+	7250 3450 7250 3350
+Wire Wire Line
+	7250 3250 6825 3250
+Wire Wire Line
+	7250 2850 7250 2950
+$Comp
+L Switch:SW_Push_DPDT SW8
+U 1 1 5E43542C
+P 7450 3150
+F 0 "SW8" H 7450 3625 50  0000 C CNN
+F 1 "SW_SPDT" H 7450 3550 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 7450 3150 50  0001 C CNN
+F 3 "~" H 7450 3150 50  0001 C CNN
+	1    7450 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 2950
+Wire Wire Line
+	7250 2950 7250 3050
+Connection ~ 7250 3350
+Wire Wire Line
+	7250 3350 7250 3250
+$Comp
+L Device:R R17
+U 1 1 5E435436
+P 7800 3450
+F 0 "R17" V 7593 3450 50  0000 C CNN
+F 1 "200k" V 7684 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 3450 50  0001 C CNN
+F 3 "~" H 7800 3450 50  0001 C CNN
+	1    7800 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 3250 8075 3250
+Wire Wire Line
+	8075 3250 8075 3350
+Wire Wire Line
+	8075 3450 7950 3450
+Wire Wire Line
+	8075 3350 8500 3350
+Wire Wire Line
+	8500 2950 8500 3350
+Connection ~ 8075 3350
+Wire Wire Line
+	8075 3350 8075 3450
+Text GLabel 4575 3350 0    50   Input ~ 0
+0V
+Wire Wire Line
+	4575 3350 4775 3350
+$Comp
+L Device:R R20
+U 1 1 5E452756
+P 6150 4725
+F 0 "R20" V 5975 4725 50  0000 C CNN
+F 1 "50k" V 6050 4725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 4725 50  0001 C CNN
+F 3 "~" H 6150 4725 50  0001 C CNN
+	1    6150 4725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 4925 6425 4925
+Wire Wire Line
+	6425 4725 6300 4725
 $Comp
 L Device:R R21
-U 1 1 5E2F82CB
-P 9775 5400
-F 0 "R21" V 9700 5400 50  0000 C CNN
-F 1 "1k" V 9775 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9705 5400 50  0001 C CNN
-F 3 "~" H 9775 5400 50  0001 C CNN
-	1    9775 5400
+U 1 1 5E45275E
+P 6975 4725
+F 0 "R21" V 6768 4725 50  0000 C CNN
+F 1 "100k" V 6859 4725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 4725 50  0001 C CNN
+F 3 "~" H 6975 4725 50  0001 C CNN
+	1    6975 4725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6825 4925 7250 4925
+Wire Wire Line
+	7125 4725 7250 4725
+$Comp
+L Device:R R22
+U 1 1 5E452766
+P 7800 4725
+F 0 "R22" V 7593 4725 50  0000 C CNN
+F 1 "200k" V 7684 4725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 4725 50  0001 C CNN
+F 3 "~" H 7800 4725 50  0001 C CNN
+	1    7800 4725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 4925 8075 4925
+Wire Wire Line
+	7950 4725 8075 4725
+$Comp
+L Device:R R19
+U 1 1 5E45276E
+P 5325 4725
+F 0 "R19" V 5150 4725 50  0000 C CNN
+F 1 "25k" V 5225 4725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 4725 50  0001 C CNN
+F 3 "~" H 5325 4725 50  0001 C CNN
+	1    5325 4725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5175 4925 5600 4925
+Wire Wire Line
+	5475 4725 5600 4725
+$Comp
+L Switch:SW_Push_DPDT SW9
+U 1 1 5E452776
+P 4975 5025
+F 0 "SW9" H 4975 5500 50  0000 C CNN
+F 1 "SW_SPDT" H 4975 5425 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 4975 5025 50  0001 C CNN
+F 3 "~" H 4975 5025 50  0001 C CNN
+	1    4975 5025
+	1    0    0    -1  
+$EndComp
+Text GLabel 4575 4825 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	4575 4825 4775 4825
+Wire Wire Line
+	8075 4725 8075 4825
+Wire Wire Line
+	8075 4825 8500 4825
+Connection ~ 8075 4825
+Wire Wire Line
+	8075 4825 8075 4925
+Connection ~ 8500 4825
+Wire Wire Line
+	8500 4825 8800 4825
+Text GLabel 8800 4825 2    50   Input ~ 0
+ADC_1
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 5E452785
+P 10100 5625
+F 0 "J3" H 10150 5942 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 10150 5851 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 10100 5625 50  0001 C CNN
+F 3 "~" H 10100 5625 50  0001 C CNN
+	1    10100 5625
+	1    0    0    -1  
+$EndComp
+Text GLabel 10475 5525 2    50   Input ~ 0
+0V
+Wire Wire Line
+	10475 5525 10400 5525
+Wire Wire Line
+	9825 5525 9900 5525
+Text GLabel 9825 5525 0    50   Input ~ 0
+PWR_OUT_3
+Text GLabel 10225 4475 2    50   Output ~ 0
+PWR_OUT_3
+Text GLabel 9550 4825 0    50   Input ~ 0
+R_OUT
+NoConn ~ 9900 5625
+NoConn ~ 9900 5725
+NoConn ~ 10400 5625
+NoConn ~ 10400 5725
+$Comp
+L Device:R R27
+U 1 1 5E452795
+P 9700 4825
+F 0 "R27" V 9625 4825 50  0000 C CNN
+F 1 "1k" V 9700 4825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9630 4825 50  0001 C CNN
+F 3 "~" H 9700 4825 50  0001 C CNN
+	1    9700 4825
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Q_PMOS_GSD Q3
-U 1 1 5E2F82D1
-P 10125 5400
-F 0 "Q3" H 10350 5475 50  0000 L CNN
-F 1 "Q_PMOS_GSD" H 10350 5375 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10325 5500 50  0001 C CNN
-F 3 "~" H 10125 5400 50  0001 C CNN
-	1    10125 5400
+U 1 1 5E45279B
+P 10050 4825
+F 0 "Q3" H 10275 4900 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 10275 4800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10250 4925 50  0001 C CNN
+F 3 "~" H 10050 4825 50  0001 C CNN
+	1    10050 4825
 	1    0    0    -1  
 $EndComp
-Text GLabel 10225 5600 3    50   Input ~ 0
+Text GLabel 10150 5025 3    50   Input ~ 0
 3.3V
 Wire Wire Line
-	10300 5050 10225 5050
+	10225 4475 10150 4475
 Wire Wire Line
-	10225 5050 10225 5200
+	10150 4475 10150 4625
+$Comp
+L Device:R R23
+U 1 1 5E4527A4
+P 5325 5325
+F 0 "R23" V 5150 5325 50  0000 C CNN
+F 1 "25k" V 5225 5325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 5325 50  0001 C CNN
+F 3 "~" H 5325 5325 50  0001 C CNN
+	1    5325 5325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 4725 5600 4825
+$Comp
+L Switch:SW_Push_DPDT SW10
+U 1 1 5E4527AB
+P 5800 5025
+F 0 "SW10" H 5800 5500 50  0000 C CNN
+F 1 "SW_SPDT" H 5800 5425 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 5800 5025 50  0001 C CNN
+F 3 "~" H 5800 5025 50  0001 C CNN
+	1    5800 5025
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 4825
+Wire Wire Line
+	5600 4825 5600 4925
+Wire Wire Line
+	5475 5325 5600 5325
+Wire Wire Line
+	5600 5325 5600 5225
+Wire Wire Line
+	5600 5125 5600 5225
+Wire Wire Line
+	5175 5125 5600 5125
+Connection ~ 5600 5225
+$Comp
+L Device:R R24
+U 1 1 5E4527B8
+P 6150 5325
+F 0 "R24" V 5975 5325 50  0000 C CNN
+F 1 "50k" V 6050 5325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 5325 50  0001 C CNN
+F 3 "~" H 6150 5325 50  0001 C CNN
+	1    6150 5325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 5325 6425 5325
+Wire Wire Line
+	6425 5325 6425 5225
+Wire Wire Line
+	6425 5125 6000 5125
+Wire Wire Line
+	6425 4725 6425 4825
+$Comp
+L Switch:SW_Push_DPDT SW11
+U 1 1 5E4527C2
+P 6625 5025
+F 0 "SW11" H 6625 5500 50  0000 C CNN
+F 1 "SW_SPDT" H 6625 5425 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6625 5025 50  0001 C CNN
+F 3 "~" H 6625 5025 50  0001 C CNN
+	1    6625 5025
+	1    0    0    -1  
+$EndComp
+Connection ~ 6425 4825
+Wire Wire Line
+	6425 4825 6425 4925
+Connection ~ 6425 5225
+Wire Wire Line
+	6425 5225 6425 5125
+$Comp
+L Device:R R25
+U 1 1 5E4527CC
+P 6975 5325
+F 0 "R25" V 6768 5325 50  0000 C CNN
+F 1 "100k" V 6859 5325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6905 5325 50  0001 C CNN
+F 3 "~" H 6975 5325 50  0001 C CNN
+	1    6975 5325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7125 5325 7250 5325
+Wire Wire Line
+	7250 5325 7250 5225
+Wire Wire Line
+	7250 5125 6825 5125
+Wire Wire Line
+	7250 4725 7250 4825
+$Comp
+L Switch:SW_Push_DPDT SW12
+U 1 1 5E4527D6
+P 7450 5025
+F 0 "SW12" H 7450 5500 50  0000 C CNN
+F 1 "SW_SPDT" H 7450 5425 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 7450 5025 50  0001 C CNN
+F 3 "~" H 7450 5025 50  0001 C CNN
+	1    7450 5025
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 4825
+Wire Wire Line
+	7250 4825 7250 4925
+Connection ~ 7250 5225
+Wire Wire Line
+	7250 5225 7250 5125
+$Comp
+L Device:R R26
+U 1 1 5E4527E0
+P 7800 5325
+F 0 "R26" V 7593 5325 50  0000 C CNN
+F 1 "200k" V 7684 5325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 5325 50  0001 C CNN
+F 3 "~" H 7800 5325 50  0001 C CNN
+	1    7800 5325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 5125 8075 5125
+Wire Wire Line
+	8075 5125 8075 5225
+Wire Wire Line
+	8075 5325 7950 5325
+Wire Wire Line
+	8075 5225 8500 5225
+Wire Wire Line
+	8500 4825 8500 5225
+Connection ~ 8075 5225
+Wire Wire Line
+	8075 5225 8075 5325
+Text GLabel 4575 5225 0    50   Input ~ 0
+0V
+Wire Wire Line
+	4575 5225 4775 5225
+$Comp
+L Timer:TLC555CP U?
+U 1 1 5E466E7C
+P 2700 2300
+F 0 "U?" H 2975 2800 50  0000 C CNN
+F 1 "TLC555CP" H 2975 2700 50  0000 C CNN
+F 2 "" H 2700 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc555.pdf" H 2700 2300 50  0001 C CNN
+	1    2700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5E473EEB
+P 1025 2100
+F 0 "RV?" H 925 2175 50  0000 R CNN
+F 1 "100kΩ" H 925 2075 50  0000 R CNN
+F 2 "" H 1025 2100 50  0001 C CNN
+F 3 "~" H 1025 2100 50  0001 C CNN
+	1    1025 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 850  1600 0    50   Input ~ 0
+PWR_IN
+Wire Wire Line
+	850  1600 1025 1600
+Text GLabel 850  2750 0    50   Input ~ 0
+0V
+Wire Wire Line
+	1025 2750 850  2750
+$Comp
+L Device:C C?
+U 1 1 5E480CB9
+P 1375 2100
+F 0 "C?" V 1100 2125 50  0000 C CNN
+F 1 "C" V 1200 2125 50  0000 C CNN
+F 2 "" H 1413 1950 50  0001 C CNN
+F 3 "~" H 1375 2100 50  0001 C CNN
+	1    1375 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1225 2100 1175 2100
+$Comp
+L Device:R R?
+U 1 1 5E488129
+P 1650 1825
+F 0 "R?" V 1443 1825 50  0000 C CNN
+F 1 "100k" V 1534 1825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 1825 50  0001 C CNN
+F 3 "~" H 1650 1825 50  0001 C CNN
+	1    1650 1825
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E488F96
+P 1650 2375
+F 0 "R?" V 1443 2375 50  0000 C CNN
+F 1 "100k" V 1534 2375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 2375 50  0001 C CNN
+F 3 "~" H 1650 2375 50  0001 C CNN
+	1    1650 2375
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1650 2225 1650 2100
+Wire Wire Line
+	1525 2100 1650 2100
+Connection ~ 1650 2100
+Wire Wire Line
+	1650 2100 1650 1975
+Wire Wire Line
+	1650 2100 1775 2100
+Wire Wire Line
+	1650 1675 1650 1600
+Wire Wire Line
+	1650 1600 1025 1600
+Connection ~ 1025 1600
+Wire Wire Line
+	1025 1600 1025 1950
+Wire Wire Line
+	1650 2525 1650 2750
+Wire Wire Line
+	1650 2750 1025 2750
+Connection ~ 1025 2750
+Wire Wire Line
+	1025 2250 1025 2750
+Wire Wire Line
+	2700 2750 2700 2700
+Connection ~ 1650 2750
+Wire Wire Line
+	2700 1900 2700 1600
+Connection ~ 1650 1600
+Wire Wire Line
+	1650 2750 1900 2750
+Wire Wire Line
+	1650 1600 2100 1600
+$Comp
+L Device:C C?
+U 1 1 5E4EAFBA
+P 1900 2450
+F 0 "C?" H 1850 2375 50  0000 R CNN
+F 1 "10nF" H 1850 2550 50  0000 R CNN
+F 2 "" H 1938 2300 50  0001 C CNN
+F 3 "~" H 1900 2450 50  0001 C CNN
+	1    1900 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 2300 1900 2300
+Wire Wire Line
+	1900 2600 1900 2750
+Connection ~ 1900 2750
+Wire Wire Line
+	1900 2750 2700 2750
+Wire Wire Line
+	2200 2500 2100 2500
+Wire Wire Line
+	2100 2500 2100 1600
+Connection ~ 2100 1600
+Wire Wire Line
+	2100 1600 2700 1600
+Wire Wire Line
+	1775 2100 1775 2900
+Wire Wire Line
+	1775 2900 3200 2900
+Wire Wire Line
+	3200 2900 3200 2500
+Connection ~ 1775 2100
+Wire Wire Line
+	1775 2100 2200 2100
+NoConn ~ 3200 2300
+$Comp
+L Device:R R?
+U 1 1 5E52B19F
+P 3350 2100
+F 0 "R?" V 3275 2100 50  0000 C CNN
+F 1 "1k" V 3350 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 2100 50  0001 C CNN
+F 3 "~" H 3350 2100 50  0001 C CNN
+	1    3350 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5E52B1A5
+P 3700 2100
+F 0 "Q?" H 3925 2175 50  0000 L CNN
+F 1 "Q_PMOS_GSD" H 3925 2075 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3900 2200 50  0001 C CNN
+F 3 "~" H 3700 2100 50  0001 C CNN
+	1    3700 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3875 1750 2    50   Output ~ 0
+3.3V
+Wire Wire Line
+	3875 1750 3800 1750
+Wire Wire Line
+	3800 1750 3800 1900
+Text GLabel 3800 2300 3    50   Input ~ 0
+PWR_IN
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U?
+U 1 1 5E5724FD
+P 1750 4200
+F 0 "U?" H 1200 4250 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 1200 4200 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 1750 4200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 1750 4200 50  0001 C CNN
+	1    1750 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 3450 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	1500 3450 1750 3450
+Wire Wire Line
+	1750 3450 1750 3600
+Text GLabel 1625 4950 0    50   Input ~ 0
+0V
+Wire Wire Line
+	1750 4800 1750 4950
+Wire Wire Line
+	1750 4950 1625 4950
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 5E588D4A
+P 1700 5600
+F 0 "J?" H 1750 5917 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 1750 5826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 1700 5600 50  0001 C CNN
+F 3 "~" H 1700 5600 50  0001 C CNN
+	1    1700 5600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
