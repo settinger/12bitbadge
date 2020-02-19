@@ -7,29 +7,29 @@ signed int timerCounter = 0;
 #define _BV(bit) (1 << (bit))
 
 void Setup(void) {
-	TCCR0A = (3<<COM0B0) | (2<<WGM00); // Datasheet p100; set PB0 (Pin 1) as PWM pin
+	TCCR0A = (3<<COM0A0) | (2<<WGM00); // Datasheet p100; set PB0 (Pin 1) as PWM pin
 	TCCR0B = (2<<CS00) | (3<<WGM02);   // Datasheet p103; set PWM behavior, set clock scaler to 125 kHz
-	OCR0B = 0;                         // Counter for PWM on PB0 (pin 1)
+	OCR0A = 0;                         // Counter for PWM on PB0 (pin 1)
 	ICR0 = 127;                        // Counter resets approx. every millisecond, good for timing
-	OCR0A = 63;                        // A nice middle-of-the-range value for timing during PWM
+	OCR0B = 63;                        // A nice middle-of-the-range value for timing during PWM
 	DDRB = 1<<PORTB0;                  // Datasheet p76; Set PB0 (pin 1) as output
 	PUEB = 1<<PUEB0;                   // Datasheet p74; set PB0 (pin 1) to use internal pullup resistor
 	ADMUX = 2<<MUX0;                   // Datasheet p131; Set PB2 (pin 4) as analog input
 	ADCSRA = 1<<ADEN | 3<<ADPS0;       // Datasheet p132; Enable ADC | Set ADC clock to 125 kHz
 }
 
-void OCR0A_idle(void) {
+void OCR0B_idle(void) {
 	// Idle until compare match occurs
-	while(!(TIFR0 & (1<<OCF0A)));
+	while(!(TIFR0 & (1<<OCF0B)));
 	
 	// Clear interrupt flag by writing a 1 to the register
-	TIFR0 |= 1<<OCF0A;
+	TIFR0 |= 1<<OCF0B;
 }
 
 void idle(int cycles) {
 	timerCounter = 0;
 	while (timerCounter < cycles) {
-		OCR0A_idle();
+		OCR0B_idle();
 		timerCounter++;
 	}
 }
@@ -88,8 +88,8 @@ int main(void) {
 	while(1) {
 		// Figure out which switches are switched on
 		int switches = getSwitches();
-		// Set OCR0B 
-		OCR0B = switches<<3;
+		// Set OCR0A
+		OCR0A = switches<<3;
 		// Wait approx 1/20th of a second before checking again
 		idle(50);
 	}
