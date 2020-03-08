@@ -1,3 +1,5 @@
+#define F_CPU 1000000
+
 #include <avr/io.h>
 #include <util/delay.h>
 
@@ -89,7 +91,7 @@ int main(void) {
 		// Figure out which switches are switched on
 		int switches = getSwitches();
 		// Set OCR0A
-		OCR0A = switches<<3;
+		OCR0A = switches*8;
 		// Wait approx 1/20th of a second before checking again
 		idle(50);
 	}
