@@ -45,37 +45,37 @@ int getSwitches(void) {
 	while (ADCSRA & 1<<ADSC) {
 		;
 	}
-	if (ADCL > 140) {
+	if (ADCL > 135) {
 		switches = 0b0000;
-	} else if (ADCL > 106) {
+		} else if (ADCL > 106) {
 		switches = 0b0001;
-	} else if (ADCL > 75) {
+		} else if (ADCL > 75) {
 		switches = 0b0010;
-	} else if (ADCL > 57) {
+		} else if (ADCL > 57) {
 		switches = 0b0011;
-	} else if (ADCL > 47) {
+		} else if (ADCL > 47) {
 		switches = 0b0100;
-	} else if (ADCL > 39) {
+		} else if (ADCL > 39) {
 		switches = 0b0101;
-	} else if (ADCL > 34) {
+		} else if (ADCL > 34) {
 		switches = 0b0110;
-	} else if (ADCL > 30) {
+		} else if (ADCL > 30) {
 		switches = 0b0111;
-	} else if (ADCL > 26) {
+		} else if (ADCL > 26) {
 		switches = 0b1000;
-	} else if (ADCL > 24) {
+		} else if (ADCL > 24) {
 		switches = 0b1001;
-	} else if (ADCL > 22) {
+		} else if (ADCL > 22) {
 		switches = 0b1010;
-	} else if (ADCL > 20) {
+		} else if (ADCL > 20) {
 		switches = 0b1011;
-	} else if (ADCL > 18) {
+		} else if (ADCL > 18) {
 		switches = 0b1100;
-	} else if (ADCL > 17) {
+		} else if (ADCL > 17) {
 		switches = 0b1101;
-	} else if (ADCL > 16) {
+		} else if (ADCL > 16) {
 		switches = 0b1110;
-	} else {
+		} else {
 		switches = 0b1111;
 	}
 	return(switches);
@@ -90,6 +90,11 @@ int main(void) {
 	while(1) {
 		// Figure out which switches are switched on
 		int switches = getSwitches();
+		if (switches == 0) {
+			DDRB = 0;
+		} else {
+			DDRB = 1<<PUEB0;
+		}
 		// Set OCR0A
 		OCR0A = switches*8;
 		// Wait approx 1/20th of a second before checking again
